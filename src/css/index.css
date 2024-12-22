@@ -1,0 +1,69 @@
+@import "./variables.css";
+
+/* Reset general */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Asegura que el contenido ocupe el espacio disponible */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5; /* Mejora la legibilidad */
+  -webkit-font-smoothing: antialiased; /* Mejora el renderizado de fuentes en navegadores WebKit */
+  -moz-osx-font-smoothing: grayscale; /* Mejora el renderizado en macOS */
+  text-rendering: optimizeSpeed; /* Mejora el renderizado de texto */
+}
+
+/* Elimina los estilos de lista */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Enlaces sin subrayado por defecto */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Imagenes y medios sin restricciones de tamaño */
+img,
+picture,
+video,
+canvas {
+  max-width: 100%;
+  display: block;
+}
+
+/* Elimina bordes en inputs, botones y selects */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* Usa la misma fuente que el resto de la página */
+  border: none;
+  outline: none;
+}
+
+/* Asegura un comportamiento uniforme en tablas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Añade un contenedor base al body */
+body {
+  font-family: sans-serif; /* Cambia por tu fuente preferida */
+}
+
+/* Botones sin estilos predeterminados */
+button {
+  background: none;
+  cursor: pointer;
+}
