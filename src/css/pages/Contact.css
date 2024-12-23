@@ -1,5 +1,5 @@
 /* Encabezado con imagen */
-.contact-header {
+.contact-header__contact-page {
   position: relative;
   height: 300px;
   background-image: url("/img/build-2.jpg");
@@ -7,7 +7,7 @@
   background-position: center;
 }
 
-.contact-header .header-overlay {
+.contact-header__contact-page .header-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -26,12 +26,12 @@
   text-align: center;
 }
 
-.contact-header h1 {
+.contact-header__contact-page h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
-.contact-header p {
+.contact-header__contact-page p {
   font-size: 1.2rem;
   max-width: 600px;
 }

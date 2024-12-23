@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className="contact-page">
       {/* Encabezado con imagen */}
-      <header className="contact-header">
+      <header className="contact-header__contact-page">
         <div className="header-overlay">
           <h1>Contáctanos</h1>
           <p>
