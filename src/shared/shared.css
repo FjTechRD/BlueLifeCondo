@@ -1,4 +1,4 @@
-/* HEADER MOBILE */
+/*! HEADER MOBILE */
 .header-mobile {
   position: fixed;
   top: 0;
@@ -8,29 +8,40 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: var(--color-primary);
+  background-color: var(--background-color);
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   z-index: 100;
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
 }
 
 .header-mobile .logo img {
   width: 60px;
 }
 
-.menu-button {
+.menu-button,
+.settings-button {
   font-size: 24px;
   background: none;
   border: none;
   cursor: pointer;
+  color: var(--text-color);
+  transition: color var(--transition-speed);
 }
 
+.menu-button:hover,
+.settings-button:hover {
+  color: var(--accent-color);
+}
+
+/* Mobile menu */
 .mobile-menu {
   position: fixed;
   top: 0;
   right: -100%;
   width: 70%;
   height: 100%;
-  background-color: var(--color-primary);
+  background-color: var(--background-color);
   box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.1);
   transition: right var(--transition-speed) ease-in-out;
   z-index: 99;
@@ -52,15 +63,41 @@
 .mobile-menu ul li a {
   text-decoration: none;
   font-size: 18px;
-  color: var(--color-dark);
+  color: var(--text-color);
   transition: color var(--transition-speed);
 }
 
 .mobile-menu ul li a:hover {
-  color: var(--color-hover);
+  color: var(--accent-color);
 }
 
-/* HEADER DESKTOP */
+/* Settings menu */
+.settings-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: var(--background-color);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.settings-menu button {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  margin: 5px 0;
+  cursor: pointer;
+  transition: color var(--transition-speed);
+}
+
+.settings-menu button:hover {
+  color: var(--accent-color);
+}
+
+/*! HEADER DESKTOP */
 .header-desktop {
   position: fixed;
   top: 0;
@@ -68,60 +105,168 @@
   width: 100%;
   padding: 15px 30px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   background-color: transparent;
-  transition: background-color var(--transition-speed);
+  transition: background-color var(--transition-speed),
+    color var(--transition-speed);
   z-index: 100;
 }
 
+/* Zona inicial (sin scroll) */
+.header-desktop.top .logo,
+.header-desktop.top .settings-button {
+  display: none; /* Oculta logo e icono ⚙ */
+}
+
+.header-desktop.top .desktop-nav {
+  margin: 0 auto; /* Centra el menú horizontalmente */
+  color: var(--color-light); /* Menú en blanco */
+}
+
+.header-desktop.top
+  .desktop-nav
+  a:hover.header-desktop.top
+  .desktop-nav
+  a:hover {
+  color: var(--accent-color); /* Color de acento al pasar el cursor */
+}
+
+/* Con scroll */
 .header-desktop.scrolled {
-  background-color: var(--color-primary);
+  background-color: var(
+    --background-color
+  ); /* Fondo de color al hacer scroll */
+  color: var(--text-color); /* Letras cambian al color principal */
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.header-desktop .logo img {
-  width: 150px;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity var(--transition-speed);
+.header-desktop.scrolled .logo {
+  display: block;
+  margin-right: auto;
+  width: 60px;
 }
 
-.header-desktop.scrolled .logo img {
-  visibility: visible;
-  opacity: 1;
-}
-
-.nav-desktop {
+.header-desktop.scrolled .desktop-nav {
+  margin: 0 auto;
   display: flex;
   gap: 30px;
 }
 
-.nav-desktop a {
+.header-desktop.scrolled .settings-button {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.desktop-nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav li a {
   text-decoration: none;
   font-size: 18px;
-  color: var(--color-dark);
+  color: var(--color-light);
   transition: color var(--transition-speed);
 }
 
-.nav-desktop a:hover {
-  color: var(--color-hover);
+.desktop-nav.scrolled li a {
+  color: var(--text-color-dark);
 }
 
-.right-menu-desktop {
-  font-size: 24px;
-  cursor: pointer;
-  visibility: hidden;
-  opacity: 0;
-  transition: opacity var(--transition-speed);
+.desktop-nav li a:hover {
+  color: var(--accent-color);
 }
 
-.header-desktop.scrolled .right-menu-desktop {
-  visibility: visible;
-  opacity: 1;
+.settings-button:hover {
+  color: var(--accent-color);
 }
 
-/* TRANSICIONES */
-.transition {
-  transition: all var(--transition-speed);
+.settings-menu {
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  background-color: var(--background-color);
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*! Footer */
+
+.footer {
+  background-color: #222; /* Fondo oscuro */
+  color: #fff; /* Texto claro */
+  text-align: center;
+  padding: 20px 10px;
+}
+
+.footer p {
+  margin: 0 0 10px; /* Espaciado inferior */
+  font-size: 0.9rem;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* Soporte para dispositivos pequeños */
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-links a:focus {
+  color: #ffd700; /* Color dorado al pasar el cursor o enfocar */
+}
+
+.footer-social {
+  margin: 15px 0 0;
+}
+
+.footer-social a {
+  margin: 0 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover,
+.footer-social a:focus {
+  color: #ffd700;
+}
+
+.footer__designed__reference {
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer__designed__reference:hover {
+  color: #ffd700;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .footer-links {
+    gap: 10px;
+  }
 }

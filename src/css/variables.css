@@ -3,18 +3,18 @@
   --background-color: #ffffff;
   --text-color: #003366;
   --accent-color: #0056b3;
-  --accent-color-dark: #004494;
 
   /* Modo oscuro */
   --background-color-dark: #1c1c1c;
   --text-color-dark: #f4c842;
   --accent-color-dark-mode: #d4a30a;
 
-  /* GENERALES */
-  --color-primary: #ffffff;
-  --color-secondary: #007bff;
-  --color-dark: #333333;
-  --color-light: #f8f9fa;
-  --color-hover: #0056b3;
-  --transition-speed: 0.3s;
+  /* Generales */
+  --color-primary: var(--background-color); /* Consistente con el fondo claro */
+  --color-secondary: var(--accent-color); /* Usando color de acento */
+  --color-dark: #333333; /* Conservado */
+  --color-light: #f8f9fa; /* Conservado */
+  --color-hover: var(--accent-color-dark); /* Reutilizando acento oscuro */
+  --transition-speed: 0.3s; /* Conservado */
+  --text-color-light: #f8f9fa;
 }

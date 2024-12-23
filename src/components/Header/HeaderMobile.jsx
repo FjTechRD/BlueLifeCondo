@@ -1,39 +1,68 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "../../shared/shared.css";
 
 const HeaderMobile = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [settingsOpen, setSettingsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const toggleMenu = () => setMenuOpen(!menuOpen);
+  const toggleSettings = () => setSettingsOpen(!settingsOpen);
 
   return (
-    <div className="header-mobile">
-      <button className="menu-button" onClick={toggleMenu}>
+    <header className="header-mobile">
+      {/* Botón para abrir el menú */}
+      <button
+        className="menu-button"
+        onClick={toggleMenu}
+        aria-label="Abrir menú"
+      >
         ☰
       </button>
+
+      {/* Logo centrado */}
       <div className="logo">
-        <img src="/BLLogo.png" alt="Logo BlueLife" />
+        <img src="/BLLogo.png" alt="Logo BlueLife" className="logo__mobile" />
       </div>
-      <div className={`mobile-menu ${isMenuOpen ? "open" : ""}`}>
+
+      {/* Botón de configuraciones */}
+      <button
+        className="settings-button"
+        onClick={toggleSettings}
+        aria-label="Abrir configuraciones"
+      >
+        ⚙
+      </button>
+
+      {/* Menú desplegable */}
+      <nav className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <Link to="/apartamentos">Apartamentos</Link>
+            <a href="/">Inicio</a>
           </li>
           <li>
-            <Link to="/servicios">Servicios</Link>
+            <Link to="/services">Servicios</Link>
           </li>
           <li>
-            <Link to="/ubicacion">Ubicación</Link>
+            <Link to="/about-us">Sobre Nosotros</Link>
           </li>
           <li>
-            <Link to="/contacto">Contacto</Link>
+            <Link to="/contact">Contacto</Link>
           </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+
+      {/* Configuraciones desplegables */}
+      {settingsOpen && (
+        <div className="settings-menu">
+          <button onClick={() => alert("Modo Claro/Oscuro activado")}>
+            Modo Claro/Oscuro
+          </button>
+          <button onClick={() => alert("Configuraciones abiertas")}>
+            Configuraciones
+          </button>
+        </div>
+      )}
+    </header>
   );
 };
 

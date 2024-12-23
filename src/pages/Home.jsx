@@ -1,24 +1,22 @@
 import React from "react";
 import "../css/pages/Home.css";
+import VideoBackground from "../components/Home/VideoBackground";
+import ApartmentCards from "../components/Home/ApartmentCards";
+import AmenitiesSection from "../components/Home/AmenitiesSection";
+import LocationSectionHome from "../components/Home/LocationSectionHome";
+import CallToAction from "../components/Home/CallToAction";
+import Testimonials from "../components/Home/Testimonials";
 
-const Home = () => {
+function Home() {
   return (
-    <main className="home-container">
-      {/* Video de fondo */}
-      <video className="background-video" autoPlay loop muted>
-        <source src="/public/bg-bluelife-video.mp4" type="video/mp4" />
-        Tu navegador no soporta videos.
-      </video>
-
-      {/* Capa de degradado */}
-      <div className="gradient-overlay"></div>
-
-      {/* Contenido centrado */}
-      <div className="content-overlay">
-        <img src="/BLLogo.png" alt="Logo Blue Life" className="logo" />
-      </div>
-    </main>
+    <div>
+      <VideoBackground />
+      <ApartmentCards />
+      <AmenitiesSection />
+      <LocationSectionHome />
+      <CallToAction />
+      <Testimonials />
+    </div>
   );
-};
-
+}
 export default Home;

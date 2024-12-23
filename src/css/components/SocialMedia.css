@@ -1,0 +1,27 @@
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 1rem;
+  color: var(--text-color);
+  background: var(--accent-color);
+  padding: 15px;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+  background-color: var(--text-color-dark);
+  color: var(--background-color);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
