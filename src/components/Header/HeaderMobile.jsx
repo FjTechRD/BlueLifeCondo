@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../../shared/shared.css";
+import { Link } from "react-router-dom";
 
 const HeaderMobile = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -37,7 +38,7 @@ const HeaderMobile = () => {
       <nav className={`mobile-menu ${menuOpen ? "open" : ""}`}>
         <ul>
           <li>
-            <a href="/">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
             <Link to="/services">Servicios</Link>
