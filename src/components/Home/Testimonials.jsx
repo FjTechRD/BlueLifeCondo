@@ -1,25 +1,27 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import "../../css/pages/Home.css";
 
 function Testimonials() {
+  const { t } = useTranslation();
   const testimonials = [
     {
-      text: "El lugar perfecto para nuestra familia, las amenidades son increíbles.",
+      text: t("home.reviews-client1"),
       author: "María G.",
     },
     {
-      text: "Un servicio excepcional, nunca había vivido en un lugar tan bien pensado.",
+      text: t("home.reviews-client2"),
       author: "Juan P.",
     },
     {
-      text: "La ubicación es ideal y el ambiente es simplemente inmejorable.",
+      text: t("home.reviews-client3"),
       author: "Sofía R.",
     },
   ];
 
   return (
     <section className="testimonials-section">
-      <h2 className="section-title">Lo que dicen nuestros clientes</h2>
+      <h2 className="section-title">{t("home.reviews")}</h2>
       <div className="testimonials-list">
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial-item">

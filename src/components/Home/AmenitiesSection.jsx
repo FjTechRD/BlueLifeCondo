@@ -7,26 +7,27 @@ import {
   FaWifi,
   FaParking,
 } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import "../../css/pages/Home.css";
 
 function AmenitiesSection() {
+  const { t } = useTranslation();
   const amenities = [
-    { name: "Piscina", icon: <FaSwimmingPool /> },
-    { name: "Generador eléctrico", icon: <FaBolt /> },
-    { name: "Agua potable", icon: <FaWater /> },
-    { name: "Seguridad 24h", icon: <FaShieldAlt /> },
-    { name: "Wi-Fi de alta velocidad", icon: <FaWifi /> },
-    { name: "Parqueo techado", icon: <FaParking /> },
+    { name: t("home.amenities-pool"), icon: <FaSwimmingPool /> },
+    { name: t("home.amenities-genertor"), icon: <FaBolt /> },
+    { name: t("home.amenities-water"), icon: <FaWater /> },
+    { name: t("home.amenities-security"), icon: <FaShieldAlt /> },
+    { name: t("home.amenities-wifi"), icon: <FaWifi /> },
+    { name: t("home.amenities-garage"), icon: <FaParking /> },
   ];
 
   return (
     <section className="amenities-section">
       <div className="parallax-background ">
         <div className="amenities-content">
-          <h2 className="section-title-amenidades">Amenidades</h2>
+          <h2 className="section-title-amenidades">{t("home.amenities")}</h2>
           <p className="section-description">
-            Disfruta de una amplia variedad de servicios diseñados para tu
-            comodidad y estilo de vida.
+            {t("home.amenities-description")}
           </p>
           <ul className="amenities-list">
             {amenities.map((amenity, index) => (

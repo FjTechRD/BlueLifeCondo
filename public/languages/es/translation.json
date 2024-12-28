@@ -1,0 +1,159 @@
+{
+  "General": {
+    "Bathrooms": "Baños",
+    "Furnished": "Amueblado",
+    "Cuisine": "Cocina",
+    "bed": "Cama",
+    "yes": "Si",
+    "no": "No"
+  },
+
+  "header": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "about_us": "Sobre Nosotros",
+    "contact": "Contacto",
+    "yes": "si",
+    "no": "no"
+  },
+
+  "home": {
+    "apartments": "Apartamentos",
+    "apartments-description": "Explora la variedad de apartamentos disponibles en nuestro condominio. Cada unidad está diseñada para ofrecer comodidad, estilo y funcionalidad.",
+    "apartments-type": "Habitación",
+    "apartments-available": "disponibles",
+    "apartments-Cuisine": "Americana",
+    "apartments-Bed": "Cama Tamaño Reina",
+
+    "amenities": "Amenidades",
+    "amenities-description": "Disfruta de una amplia variedad de servicios diseñados para tu comodidad y estilo de vida.",
+    "amenities-pool": "Piscina",
+    "amenities-genertor": "Generador eléctrico",
+    "amenities-water": "Agua potable",
+    "amenities-security": "Seguridad 24h",
+    "amenities-wifi": "Wi-Fi de alta velocidad",
+    "amenities-garage": "Parqueo techado",
+
+    "location-title": "Ubicación y Contacto",
+    "location": "Ubicación",
+    "location-adress": "Playa Chiquita, El Batey, Sosúa, República Dominicana",
+    "contact": "Contacto",
+    "contact-description": "¿Tienes preguntas o deseas más información? Contáctanos para recibir atención personalizada.",
+    "contact-email": "bluelife20199@gmail.com",
+    "contact-rrhh": "Lunes a Viernes: 9:00 AM - 6:00 PM",
+    "contact-social": "Síguenos en nuestras redes sociales",
+
+    "cta": "¡Descubre tu nuevo hogar!",
+    "cta-description": "Vive en un lugar donde la comodidad y el estilo se encuentran. Haz realidad tus sueños hoy.",
+    "cta-button": "Contáctanos",
+
+    "reviews": "Lo que dicen nuestros clientes",
+    "reviews-client1": "El lugar perfecto para nuestra familia, las amenidades son increíbles.",
+    "reviews-client2": "Un servicio excepcional, nunca había vivido en un lugar tan bien pensado.",
+    "reviews-client3": "La ubicación es ideal y el ambiente es simplemente inmejorable."
+  },
+
+  "services": {
+    "title": "Servicios",
+    "title-description": "Descubre todo lo que ofrecemos para tu comodidad y satisfacción",
+
+    "first_class_services": "Servicios de Primera Clase",
+    "first_class_services-description": "Nuestro compromiso es ofrecerte servicios excepcionales que superen tus expectativas. Aquí tienes una lista de las experiencias únicas que te esperan.",
+
+    "pol-and-jaccuzi-title": "Piscina y Jacuzzi",
+    "service-Concierge-title": "Servicio de Concierge",
+    "service-restaurant-title": "Restaurante Gourmet",
+    "service-spa-title": "Spa de Clase Mundial",
+    "service-gym-title": "Gimnasio Equipado",
+    "service-garage-title": "Estacionamiento Seguro",
+    "pol-and-jaccuzi-content": "Relájate en nuestra piscina o disfruta de un momento de tranquilidad.",
+    "service-Concierge-content": "Asistencia personalizada para todas tus necesidades.",
+    "service-restaurant-content": "Deléitate con platos preparados por chefs expertos.",
+    "service-spa-content": "Tratamientos relajantes y revitalizantes para ti.",
+    "service-gym-content": "Entrena en un espacio moderno con máquinas de última generación.",
+    "service-garage-content": "Estacionamiento techado y vigilado para tu tranquilidad.",
+
+    "why_choose_us": "¿Por qué elegirnos?",
+    "choose-op-1": "Atención personalizada las 24 horas.",
+    "choose-op-2": "Instalaciones modernas y de lujo.",
+    "choose-op-3": "Ubicación inmejorable en el corazón de la ciudad.",
+
+    "additional_features-title": "Características adicionales",
+    "additional_wifi-title": "Internet de Alta velocidad",
+    "additional_wifi-content": "Disfrute de Internet confiable y rápido en todas las instalaciones.",
+    "additional_event-title": "Salon para Eventos",
+    "additional_event-content": "Espacios diseñados para albergar tus momentos especiales.",
+    "additional_green-title": "Areas verdes",
+    "additional_green-content": "Comprometidos con la sostenibilidad y las iniciativas respetuosas con el medio ambiente."
+  },
+
+  "about_us": {
+    "title": "Sobre Nosotros",
+    "title-description": "Conoce más acerca de nuestra historia, misión y valores.",
+
+    "our_history-title": "Nuestra Historia",
+    "our_history-description": "Fundado en 2010, BlueLife Condo nació con la misión de redefinir el concepto de vida de lujo. A lo largo de los años, hemos crecido gracias a nuestra dedicación a la calidad y la innovación, creando un espacio donde las personas puedan disfrutar de un estilo de vida excepcional.",
+
+    "our_mission-title": "Nuestra Misión",
+    "our_mission-description": "Proporcionar experiencias únicas y un entorno que inspire la tranquilidad, el confort y la excelencia en cada detalle.",
+
+    "our_vision-title": "Nuestra Visión",
+    "our_vision-description": "Ser líderes en el sector inmobiliario de lujo, reconocidos por nuestra innovación, calidad y compromiso con nuestros clientes.",
+
+    "core_values-title": "Valores Fundamentales",
+    "core_values-list": [
+      "Excelencia",
+      "Innovación",
+      "Compromiso",
+      "Responsabilidad",
+      "Integridad"
+    ],
+
+    "meet_team-title": "Conoce a Nuestro Equipo",
+    "meet_team-description": "Nuestro equipo está formado por profesionales apasionados y experimentados, dedicados a garantizar que cada aspecto de BlueLife Condo supere tus expectativas.",
+    "team_members": [
+      {
+        "name": "Ronald Edward Montalvo",
+        "role": "CEO & Fundador"
+      },
+      {
+        "name": "Wileska Tupete Paniagua",
+        "role": "Directora de Operaciones"
+      },
+      {
+        "name": "Javier Gonzalez",
+        "role": "Tecnología & Encargado"
+      }
+    ],
+
+    "join_community-title": "Únete a Nuestra Comunidad",
+    "join_community-description": "En BlueLife Condo, creemos en la creación de una comunidad vibrante y conectada. Contáctanos hoy para descubrir cómo puedes formar parte de nuestra familia.",
+    "join_community-button": "Contáctanos"
+  },
+
+  "contact": {
+    "title": "Contáctanos",
+    "description": "¿Tienes preguntas? Estamos aquí para ayudarte. Completa el formulario o utiliza los datos de contacto para comunicarte con nosotros.",
+
+    "contact_form-title": "Formulario de Contacto",
+    "contact_form-name": "Nombre Completo",
+    "contact_form-name-placeholder": "Tu nombre",
+    "contact_form-email": "Correo Electrónico",
+    "contact_form-email-placeholder": "Tu correo electrónico",
+    "contact_form-message": "Mensaje",
+    "contact_form-message-placeholder": "Tu mensaje",
+    "contact_form-submit": "Enviar",
+
+    "contact_details-title": "Detalles de Contacto",
+    "contact_details-description": "También puedes comunicarte con nosotros a través de los siguientes medios:",
+    "contact_details-phone": "+1 (123) 456-7890",
+    "contact_details-email": "info@bluelifecondo.com",
+    "contact_details-address": "123 Calle Principal, Ciudad, País"
+  },
+
+  "footer": {
+    "copyright": "© 2024 BlueLife Condo. Todos los derechos reservados. | Diseñado por",
+    "privacy_policy": "Política de privacidad",
+    "terms_conditions": "Términos y condiciones"
+  }
+}

@@ -7,10 +7,10 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
+import "./components/general/i18n.js";
 
 function App() {
   const location = useLocation(); // Hook para obtener la ruta actual
-  const isComingSoon = location.pathname === "/"; // Condición para ocultar Header y Footer
 
   return (
     <>

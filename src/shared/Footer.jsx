@@ -1,13 +1,14 @@
 import React from "react";
 import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 import "./shared.css";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="footer">
       <p>
-        &copy; 2024 BlueLife Condo. Todos los derechos reservados. | Diseñado
-        por{" "}
+        {t("footer.copyright")}{" "}
         <a
           className="footer__designed__reference"
           href="https://www.facebook.com/profile.php?id=100087280723773"
@@ -18,13 +19,13 @@ const Footer = () => {
       <nav>
         <ul className="footer-links">
           <li>
-            <a href="/politica-de-privacidad">Política de privacidad</a>
+            <a href="/politica-de-privacidad"> {t("footer.privacy_policy")} </a>
           </li>
           <li>
-            <a href="/terminos">Términos y condiciones</a>
+            <a href="/terminos"> {t("footer.terms_conditions")} </a>
           </li>
           <li>
-            <a href="/contacto">Contacto</a>
+            <a href="/contacto"> {t("home.contact")} </a>
           </li>
         </ul>
       </nav>
