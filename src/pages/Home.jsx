@@ -9,14 +9,14 @@ import Testimonials from "../components/Home/Testimonials";
 
 function Home() {
   return (
-    <div>
+    <main>
       <VideoBackground />
       <ApartmentCards />
       <AmenitiesSection />
       <LocationSectionHome />
       <CallToAction />
       <Testimonials />
-    </div>
+    </main>
   );
 }
 export default Home;

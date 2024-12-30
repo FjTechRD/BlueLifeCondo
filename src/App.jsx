@@ -7,6 +7,7 @@ import AboutUs from "./pages/AboutUs";
 import Contact from "./pages/Contact";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
+import ScrollToTop from "./utils/ScrollToTop.jsx";
 import "./components/general/i18n.js";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <>
       {/* Renderizar Header solo si no estamos en la ruta "/" */}
       <Header />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/apartments" element={<Apartments />} />

@@ -185,7 +185,7 @@
 .amenities-section {
   position: relative;
   overflow: hidden;
-  color: var(--text-color-light); /* Texto claro para visibilidad */
+  color: var(--color-light); /* Texto claro para visibilidad */
 }
 
 .parallax-background {

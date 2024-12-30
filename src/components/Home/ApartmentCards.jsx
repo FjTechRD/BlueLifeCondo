@@ -36,7 +36,7 @@ function ApartmentCards() {
 
   return (
     <section className="apartment-cards">
-      <h2 className="section-title__apartments">{t("apartments")}</h2>
+      <h2 className="section-title__apartments">{t("home.apartments")}</h2>
       <p className="section-description__apartments">
         {t("home.apartments-description")}
       </p>

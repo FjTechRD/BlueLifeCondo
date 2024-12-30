@@ -199,6 +199,30 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/*! LANGUAGES */
+
+.languages__changer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.languages__changer img {
+  width: 1.2rem;
+}
+
+.languages__changer button.active {
+  border: 2px solid var(--accent-color);
+  border-radius: 5px;
+  padding: 0.2rem;
+}
+
+.languages__changer button:hover {
+  transform: scale(1.1);
+  transition: transform var(--transition-speed);
+}
+
 /*! Footer */
 
 .footer {
@@ -264,20 +288,82 @@
   color: #ffd700;
 }
 
-.languages__changer {
+/*! DARK MODE LIGHT MODE BUTTON */
+
+.theme-toggle {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 1.2rem;
+  gap: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
 }
 
-.languages__changer img {
-  width: 1.2rem;
+.theme-label {
+  font-weight: bold;
+  opacity: 0.5;
+  transition: opacity var(--transition-speed);
+}
+
+.theme-toggle .toggle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+.theme-toggle .toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--color-secondary);
+  border-radius: 34px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 4px;
+  bottom: 3.5px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  transition: transform var(--transition-speed);
+}
+
+input:checked + .slider {
+  background-color: var(--accent-color);
+}
+
+input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+input:checked ~ .theme-label {
+  opacity: 1;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
   .footer-links {
     gap: 10px;
+  }
+  .languages__changer {
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .languages__changer img {
+    width: 1rem;
   }
 }
